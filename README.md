@@ -165,38 +165,6 @@ Este endpoint realiza una solicitud \`POST\` a \`https://p2p.binance.com/bapi/c2
 - Información completa: precio, disponibilidad, límites, métodos de pago
 - Indicadores de confiabilidad y experiencia
 
-## 🔧 Estructura del Proyecto
-
-\`\`\`
-binance-p2p-analyzer/
-├── app/
-│   ├── api/
-│   │   └── binance-p2p/
-│   │       └── route.ts           # Route Handler (Proxy API)
-│   ├── globals.css                # Estilos globales y variables CSS
-│   ├── layout.tsx                 # Layout principal de la aplicación
-│   └── page.tsx                   # Página principal (Home)
-├── components/
-│   ├── ui/                        # Componentes de UI (Shadcn/ui)
-│   │   ├── badge.tsx
-│   │   ├── button.tsx
-│   │   ├── calendar.tsx
-│   │   ├── card.tsx
-│   │   ├── popover.tsx
-│   │   └── select.tsx
-│   ├── advertisers-table.tsx      # Tabla de anunciantes
-│   ├── date-picker-range.tsx      # Selector de rango de fechas
-│   ├── date-picker-simple.tsx     # Selector de fechas simple
-│   ├── price-display.tsx          # Visualización de precios
-│   └── price-projection.tsx       # Componente de proyecciones
-├── lib/
-│   └── utils.ts                   # Funciones utilitarias
-├── package.json                   # Dependencias del proyecto
-├── tailwind.config.ts            # Configuración de Tailwind CSS
-├── tsconfig.json                 # Configuración de TypeScript
-└── README.md                     # Documentación del proyecto
-\`\`\`
-
 ## 🤝 Contribuciones
 
 ¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, por favor:
