@@ -37,7 +37,7 @@ Asegúrate de tener instalado:
 
 1. **Clona el repositorio:**
    \`\`\`bash
-   git clone https://github.com/tu-usuario/binance-p2p-analyzer.git
+   git clone https://github.com/kirusiya/Analizador-de-Precios-Binance-P2P.git
    cd binance-p2p-analyzer
    \`\`\`
 
@@ -88,7 +88,7 @@ La aplicación utiliza un Route Handler en Next.js como proxy para la API de Bin
   - \`t\`: Timestamp para evitar caché (añadido automáticamente por el frontend).
   - \`retry\`: Contador de reintentos (añadido automáticamente por el frontend).
 
-Este endpoint realiza una solicitud \`POST\` a \`https://p2p.binance.com/bapi/c2c/v2/friendly/c2c/adv/search\` con los \`headers\` y \`payload\` necesarios para obtener los anuncios. Filtra y procesa los datos antes de enviarlos al frontend.
+Este endpoint realiza una solicitud \`POST\` a \`https://p2p.binance.com/bapi/c2c/v2/friendly/c2c/adv/search` con los \`headers\` y \`payload\` necesarios para obtener los anuncios. Filtra y procesa los datos antes de enviarlos al frontend.
 
 ### Ejemplo de Respuesta
 
