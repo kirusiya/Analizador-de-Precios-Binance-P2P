@@ -18,9 +18,9 @@ Una herramienta avanzada para analizar precios en tiempo real y proyectar tenden
 - **Tailwind CSS:** Framework CSS para un desarrollo rápido y estilizado.
 - **Shadcn/ui:** Componentes de UI reutilizables y accesibles, construidos con Radix UI y Tailwind CSS.
 - **Node.js:** Entorno de ejecución para el backend (Route Handler).
-- **\`date-fns\`:** Librería para manipulación y formateo de fechas.
-- **\`lucide-react\`:** Colección de iconos personalizables.
-- **\`clsx\` y \`tailwind-merge\`:** Utilidades para la gestión de clases CSS.
+- **`date-fns`:** Librería para manipulación y formateo de fechas.
+- **`lucide-react`:** Colección de iconos personalizables.
+- **`clsx` y `tailwind-merge`:** Utilidades para la gestión de clases CSS.
 
 ## ⚙️ Instalación y Configuración
 
@@ -36,28 +36,28 @@ Asegúrate de tener instalado:
 ### Pasos
 
 1. **Clona el repositorio:**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/kirusiya/Analizador-de-Precios-Binance-P2P.git
    cd binance-p2p-analyzer
-   \`\`\`
+   ```
 
 2. **Instala las dependencias:**
-   \`\`\`bash
+   ```bash
    npm install
    # o
    yarn install
-   \`\`\`
+   ```
 
 3. **Ejecuta el servidor de desarrollo:**
-   \`\`\`bash
+   ```bash
    npm run dev
    # o
    yarn dev
-   \`\`\`
-   La aplicación estará disponible en \`http://localhost:3000\`.
+   ```
+   La aplicación estará disponible en `http://localhost:3000`.
 
 4. **Construye para producción (opcional):**
-   \`\`\`bash
+   ```bash
    npm run build
    # o
    yarn build
@@ -67,11 +67,11 @@ Asegúrate de tener instalado:
    npm run start
    # o
    yarn start
-   \`\`\`
+   ```
 
 ## 🚀 Uso
 
-1. **Accede a la Aplicación:** Abre tu navegador y ve a \`http://localhost:3000\`.
+1. **Accede a la Aplicación:** Abre tu navegador y ve a `http://localhost:3000`.
 2. **Actualizar Datos:** Haz clic en el botón "Actualizar Todos los Datos" para obtener la información más reciente de Binance P2P.
 3. **Ver Estadísticas:** Las tarjetas de "Vender USDT" y "Comprar USDT" mostrarán los precios mínimos, máximos y el spread.
 4. **Explorar Anunciantes:** La tabla de anunciantes te permite buscar por nombre, precio, métodos de pago, etc., y ver detalles de cada anunciante.
@@ -81,18 +81,18 @@ Asegúrate de tener instalado:
 
 La aplicación utiliza un Route Handler en Next.js como proxy para la API de Binance P2P.
 
-- **Endpoint:** \`/api/binance-p2p\`
-- **Método:** \`GET\`
+- **Endpoint:** `/api/binance-p2p`
+- **Método:** `GET`
 - **Parámetros de Query:**
-  - \`tradeType\`: \`SELL\` o \`BUY\` (por defecto \`SELL\`).
-  - \`t\`: Timestamp para evitar caché (añadido automáticamente por el frontend).
-  - \`retry\`: Contador de reintentos (añadido automáticamente por el frontend).
+  - `tradeType`: `SELL` o `BUY` (por defecto `SELL`).
+  - `t`: Timestamp para evitar caché (añadido automáticamente por el frontend).
+  - `retry`: Contador de reintentos (añadido automáticamente por el frontend).
 
-Este endpoint realiza una solicitud \`POST\` a \`https://p2p.binance.com/bapi/c2c/v2/friendly/c2c/adv/search` con los \`headers\` y \`payload\` necesarios para obtener los anuncios. Filtra y procesa los datos antes de enviarlos al frontend.
+Este endpoint realiza una solicitud `POST` a `https://p2p.binance.com/bapi/c2c/v2/friendly/c2c/adv/search` con los `headers` y `payload` necesarios para obtener los anuncios. Filtra y procesa los datos antes de enviarlos al frontend.
 
 ### Ejemplo de Respuesta
 
-\`\`\`json
+```json
 {
   "timestamp": "2024-01-20T15:30:00.000Z",
   "tradeType": "SELL",
@@ -136,7 +136,7 @@ Este endpoint realiza una solicitud \`POST\` a \`https://p2p.binance.com/bapi/c2
     "totalAdsFound": 45
   }
 }
-\`\`\`
+```
 
 ## 📊 Funcionalidades Detalladas
 
@@ -170,9 +170,9 @@ Este endpoint realiza una solicitud \`POST\` a \`https://p2p.binance.com/bapi/c2
 ¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, por favor:
 
 1. Haz un fork del repositorio.
-2. Crea una nueva rama (\`git checkout -b feature/nueva-funcionalidad\`).
-3. Realiza tus cambios y haz commit (\`git commit -m 'feat: Añade nueva funcionalidad'\`).
-4. Haz push a tu rama (\`git push origin feature/nueva-funcionalidad\`).
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m 'feat: Añade nueva funcionalidad'`).
+4. Haz push a tu rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
 ### Guías para Contribuir
@@ -255,7 +255,7 @@ Si necesitas ayuda o tienes preguntas:
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo \`LICENSE\` para más detalles.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
 ---
 
