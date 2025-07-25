@@ -61,9 +61,10 @@ Asegúrate de tener instalado:
    npm run build
    # o
    yarn build
-   \`\`\`
+   ```
    Luego, puedes iniciar la aplicación en modo de producción:
-   \`\`\`bash
+
+   ```bash
    npm run start
    # o
    yarn start
